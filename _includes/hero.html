@@ -1,5 +1,5 @@
 <section class="hero is-black is-fullheight has-text-centered">
-    <!-- {% include navbar.html %} -->
+    {% include navbar.html %}
     <div class="hero-body">
         <div class="container">
             <p class="title has-text-danger">
@@ -14,11 +14,11 @@
             <p class="subtitle has-text-primary">
                 {{ site.occupation }}
             </p>
-            <button class="button is-dark is-outlined block">
+            <a class="button is-dark is-outlined block is-ahref" href="{{ site.baseurl }}/#aboutme">
                 <p class="is-primary">
                     Learn More
                 </p>
-            </button>
+            </a>
             <div class="container">
                 <a href="http://github.com/{{ site.github_username }}" target="_blank"><i class="fab fa-github fa-2x icon is-large"></i></a>
                 <a href="http://twitter.com/{{ site.twitter_username }}" target="_blank"><i class="fab fa-twitter fa-2x icon is-large"></i></a>
