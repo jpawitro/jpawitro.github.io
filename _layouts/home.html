@@ -2,4 +2,6 @@
 layout : default
 ---
 {% include hero.html %}
-{{ content }}
+<div id="aboutme" class="content has-text-centered p-6">
+    {{ page.content | markdownify }}
+</div>
