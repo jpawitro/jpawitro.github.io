@@ -2,6 +2,8 @@
 layout : default
 ---
 {% include hero.html %}
-<div id="aboutme" class="content has-text-centered p-6">
-    {{ page.content | markdownify }}
-</div>
+<section>
+    <div id="aboutme" class="hero is-danger is-small has-text-centered p-6 subtitle is-size-3">
+        {{ page.content | markdownify }}
+    </div>
+</section>
