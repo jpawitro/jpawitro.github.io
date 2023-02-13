@@ -1,0 +1,43 @@
+<section id="occupations" class="hero is-light">
+    <div class="hero-body">
+        <p class="has-text-centered subtitle is-size-3 has-text-weight-bold">Occupations</p>
+        <div class="columns">
+            {% for job in site.occupations %}
+                <div class="card column m-6">
+                    <div class="card-image">
+                    <figure class="image is-2by1">
+                        <img src="{{ site.baseurl }}/{{ job.image }}" alt="{{ job.company }} Banner">
+                    </figure>
+                    </div>
+                    <div class="card-content">
+                    <div class="media">
+                        <div class="media-left">
+                        <figure class="image is-64x64">
+                            <img src="{{ site.baseurl }}/{{ job.logo }}" alt="{{ job.company }} Logo">
+                        </figure>
+                        </div>
+                        <div class="media-content">
+                        <p class="title is-4">{{ job.role }}</p>
+                        <p class="subtitle is-6"><a href="{{ job.url }}" target="_blank">@{{ job.company }}</a></p>
+                        </div>
+                    </div>
+                
+                    <div class="content">
+                        {{ job.responsibility }}
+                        <br><br>
+                        <div class="has-text-info">
+                            <span class="is-inline-block">Follow them on:&nbsp;&nbsp;</span>
+                            <div class="container is-inline-block has-text-danger">
+                                <a href="http://linkedin.com/company/{{ job.social.linkedin }}" target="_blank"><i class="fab fa-linkedin-in icon"></i></a>
+                                <a href="http://twitter.com/{{ job.social.twitter }}" target="_blank"><i class="fab fa-twitter icon"></i></a>
+                                <a href="http://instagram.com/{{ job.social.instagram }}" target="_blank"><i class="fab fa-instagram icon"></i></a>
+                                <a href="http://youtube.com/{{ job.social.youtube }}" target="_blank"><i class="fab fa-youtube icon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

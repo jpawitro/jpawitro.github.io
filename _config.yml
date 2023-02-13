@@ -28,20 +28,30 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 occupations:
-  orsted:
-    company : Ørsted
+  - company : Ørsted
     description: Ørsted A/S (formerly DONG Energy) is a Danish multinational power company based in Fredericia, Denmark. It is the largest energy company in Denmark and the world's largest developer of offshore wind power by number of built offshore wind farms.
     url: https://orsted.com
-    logo: https://orstedcdn.azureedge.net/-/media/www/images/corp/graphics/logos/orsted-logo/orstedlogo_svg.ashx?mh=1440&mw=1440&rev=5419029aad524e4a972b175e4fb0c899&hash=24271881DFB4168B58A188C0BC5C96AF
+    social:
+      linkedin: orsted
+      twitter: Orsted
+      instagram: orsted
+      youtube: '@Orsted'
+    logo: assets/images/Orsted.png
+    image: assets/images/orsted_banner.png
     role: Cable Monitoring Specialist 
     responsibility: A data scientist role responsible for organizing data, developing analyses, and programming solutions to ensure the availability of 30-400 kV offshore and onshore cable connections.
-  practicum:
-    company: Practicum
+  - company: Practicum
     description: Practicum is an international training bootcamp that are 100% online and part time which offer various software engineering and data analytics courses. The company help people with versatile backgrounds learn a new profession online and kick start a sustainable career in tech
     url: https://practicum.com
-    logo: https://t.cf.practicum.com/usa-main/tild3562-3266-4462-a665-346363663833__vector_5.svg
+    social:
+      linkedin: practicum-indonesia
+      twitter: PracticumUSA
+      instagram: practicum.indonesia
+      youtube: '@practicumindonesia8423'
+    logo: assets/images/Practicum.png
+    image: assets/images/practicum_banner.png
     role: Data Scientist / Data Analyst Mentor
-    responsibility: Assist the students to understand the concepts of data analysis and data science
+    responsibility: Assist the students to understand the concepts of data analysis and data science. Conducting webinar on industrial application and professional development coaching.
 
 social:
   twitter: jpawitro
