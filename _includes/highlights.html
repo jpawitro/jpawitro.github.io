@@ -1,0 +1,69 @@
+<section id=highligts" class="is-white p-6">
+    <p class="has-text-centered subtitle is-size-3 has-text-weight-bold">Highlights</p>
+    <br>
+    <div class="columns has-text-centered px-6">
+        <div class="content column px-8">
+            <i class="fas fa-clock fa-4x icon is-large"></i><br><br>
+            <span class="has-text-justified">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Explicabo eaque odit accusantium fugiat iusto, sapiente facere, 
+                eligendi dicta harum dolor impedit unde ipsum ex delectus? 
+                Quam reiciendis aperiam exercitationem error.
+            </span>
+        </div>
+        <div class="content column px-8">
+            <i class="fas fa-cogs fa-4x icon is-large"></i><br><br>
+            <span class="has-text-justified">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Explicabo eaque odit accusantium fugiat iusto, sapiente facere, 
+                eligendi dicta harum dolor impedit unde ipsum ex delectus? 
+                Quam reiciendis aperiam exercitationem error.
+            </span>
+        </div>
+        <div class="content column px-8">
+            <i class="fas fa-brain fa-4x icon is-large"></i><br><br>
+            <span class="has-text-justified">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Explicabo eaque odit accusantium fugiat iusto, sapiente facere, 
+                eligendi dicta harum dolor impedit unde ipsum ex delectus? 
+                Quam reiciendis aperiam exercitationem error.
+            </span>
+        </div>
+        <div class="content column px-8">
+            <i class="fas fa-industry fa-4x icon is-large"></i><br><br>
+            <span class="has-text-justified">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Explicabo eaque odit accusantium fugiat iusto, sapiente facere, 
+                eligendi dicta harum dolor impedit unde ipsum ex delectus? 
+                Quam reiciendis aperiam exercitationem error.
+            </span>
+        </div>
+    </div>
+    <div>
+        <canvas id="myChart"></canvas>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+        const ctx = document.getElementById('myChart');
+
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            datasets: [{
+                label: '# of Votes',
+                data: [12, 19, 3, 5, 2, 3],
+                borderWidth: 1
+            }]
+            },
+            options: {
+            scales: {
+                y: {
+                beginAtZero: true
+                }
+            }
+            }
+        });
+    </script>
+</section>
