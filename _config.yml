@@ -20,7 +20,7 @@
 
 title: Jpawitro's Space
 name: Joko Pawitro
-occupation: '| Asset Engineer | Data Scientist | Business Analyst |'
+occupation: 'Engineer | Geek | Analyst'
 email: jpawitro@protonmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Joko Pawitro's personal page.
@@ -39,7 +39,7 @@ occupations:
     logo: assets/images/Orsted.png
     image: assets/images/orsted_banner.png
     role: Cable Monitoring Specialist 
-    responsibility: A data scientist role responsible for organizing data, developing analyses, and programming solutions to ensure the availability of 30-400 kV offshore and onshore cable connections.
+    responsibility: A mix of electrical engineer and datas scientist role, that responsible for organizing data, developing analyses, and programming solutions to ensure the availability of 30-400 kV offshore and onshore cable connections.
   - company: Practicum
     description: Practicum is an international training bootcamp that are 100% online and part time which offer various software engineering and data analytics courses. The company help people with versatile backgrounds learn a new profession online and kick start a sustainable career in tech
     url: https://practicum.com
