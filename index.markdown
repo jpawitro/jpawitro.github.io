@@ -4,6 +4,6 @@
 
 layout: home
 ---
-I'm dealing with **electrical engineering** and **data science** and has been around in the energy industry for over a decade, specializing in the _whole lifecycle of asset management_, especially in the _reliability_ and _integrity engineering_. Shifted for the greater good to the **$${\color{green}green energy industry}$$**.
+I'm dealing with **electrical engineering** and **data science** and has been around in the energy industry for over a decade, specializing in the _whole lifecycle of asset management_, especially in the _reliability_ and _integrity engineering_. Shifted for the greater good to the <span style="color:red,font-weight:bold">green energy industry</span>.
 <br><br>
 Involves in the engineering phase of <ins>[Ocean Wind 01 project, New Jersey](https://oceanwindone.com/)</ins>,<br>working on the development of <ins>[dynamic line rating technology](https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2020/Jul/IRENA_Dynamic_line_rating_2020.pdf?la=en&hash=A8129CE4C516895E7749FD495C32C8B818112D7C)</ins>.
