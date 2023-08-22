@@ -4,6 +4,4 @@
 
 layout: home
 ---
-I'm dealing with **electrical engineering** and **data science** and has been around in the energy industry for over a decade. Specializing in the _whole lifecycle of asset management_, especially in the _reliability_ and _integrity engineering_. Shifted for the greater good to the <span style="color:green">**green energy industry**</span>.
-<br><br>
-Involves in the engineering phase of <ins>[Ocean Wind 01](https://oceanwindone.com/)</ins> project, New Jersey,<br>working on the development of <ins>[dynamic line rating](https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2020/Jul/IRENA_Dynamic_line_rating_2020.pdf?la=en&hash=A8129CE4C516895E7749FD495C32C8B818112D7C)</ins> technology.
+Dealing with data science, power transmission, and multiphysics simulation. Has been around in the energy industry for over a decade, specializing in the whole lifecycle of asset management. Currently involves in the engineering phase of <ins>[Ocean Wind 01](https://oceanwindone.com/)</ins> project, New Jersey, working on the development of [dynamic line rating](https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2020/Jul/IRENA_Dynamic_line_rating_2020.pdf?la=en&hash=A8129CE4C516895E7749FD495C32C8B818112D7C)</ins> technology.
