@@ -1,0 +1,20 @@
+/*
+ * Fix: ordered/unordered list markers get clipped on the left.
+ *
+ * Root cause: `smaller: true` in this deck's YAML makes Quarto inject
+ * `html:not(.print-pdf) .reveal ol/ul { margin: 0; ... }` (needed for
+ * auto-scaling), which — combined with the page's own CSS reset that
+ * zeroes `padding` on every element including `ol`/`ul`/`li` — leaves
+ * zero indent for the marker box. With `list-style-position: outside`
+ * (the default) and `scrollable: true` clipping overflow, the number/
+ * bullet renders flush against the slide edge and its left half is cut
+ * off.
+ *
+ * Fix: explicitly restore a left margin on lists inside slides, with
+ * !important since it must win over both the generic reset and the
+ * `smaller`-mode override regardless of their order/specificity.
+ */
+.reveal .slide ol,
+.reveal .slide ul {
+  margin-left: 1.4em !important;
+}
