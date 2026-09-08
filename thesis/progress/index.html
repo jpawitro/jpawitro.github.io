@@ -9,7 +9,9 @@ permalink: /thesis/progress/
     <h1 class="title">Thesis Progress</h1>
     <p class="subtitle">Dynamic Line Rating for HV cable systems — dated write-ups, most recent first.</p>
 
-    {% assign reports = site.static_files | where_exp: "f", "f.path contains '/thesis/progress/' and f.extname == '.html' and f.name != 'index.html'" %}
+    {% assign reports = site.static_files | where_exp: "f", "f.path contains '/thesis/progress/'" %}
+    {% assign reports = reports | where: "extname", ".html" %}
+    {% assign reports = reports | where_exp: "f", "f.name != 'index.html'" %}
     {% assign reports = reports | sort: "name" | reverse %}
 
     {% if reports.size == 0 %}
