@@ -4,4 +4,4 @@
 
 layout: home
 ---
-I do mechanical-electrical engineering analysis, data science, multiphysics simulation and business analytics.
+I work on HV cable engineering and offshore wind digitalization — thermal-electrical modeling, condition monitoring, and Dynamic Line Rating — while researching DLR for HV cable systems as my Master's thesis.

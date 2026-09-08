@@ -1,0 +1,37 @@
+---
+layout: page
+title: Thesis Progress
+permalink: /thesis/progress/
+---
+
+<section class="section">
+  <div class="container">
+    <h1 class="title">Thesis Progress</h1>
+    <p class="subtitle">Dynamic Line Rating for HV cable systems — dated write-ups, most recent first.</p>
+
+    {% assign reports = site.static_files | where_exp: "f", "f.path contains '/thesis/progress/' and f.extname == '.html' and f.name != 'index.html'" %}
+    {% assign reports = reports | sort: "name" | reverse %}
+
+    {% if reports.size == 0 %}
+      <p>No progress reports yet — check back soon.</p>
+    {% else %}
+      <div class="content">
+        {% for file in reports %}
+          {% assign date_str = file.name | slice: 0, 10 %}
+          {% assign slug = file.name | remove_first: date_str | remove_first: '_' | remove: '.html' %}
+          {% assign words = slug | split: '-' %}
+          {% assign title = "" %}
+          {% for w in words %}
+            {% assign capped = w | capitalize %}
+            {% assign title = title | append: capped %}
+            {% unless forloop.last %}{% assign title = title | append: " " %}{% endunless %}
+          {% endfor %}
+          <div class="box is-flex is-justify-content-space-between is-align-items-center">
+            <a href="{{ site.baseurl }}{{ file.path }}">{{ title }}</a>
+            <span class="tag is-light">{{ date_str | date: "%d %b %Y" }}</span>
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</section>

@@ -38,27 +38,31 @@ occupations:
       youtube: '@Orsted'
     logo: assets/images/Orsted.png
     image: assets/images/orsted_banner.png
-    role: Cable Monitoring Specialist 
-    responsibility: A mix of electrical engineer and data scientist role, that responsible for organizing data, developing analyses, and programming solutions to ensure the availability of 30-400 kV offshore and onshore cable connections.
-  - company: Practicum
-    description: Practicum is an international training bootcamp that are 100% online and part time which offer various software engineering and data analytics courses. The company help people with versatile backgrounds learn a new profession online and kick start a sustainable career in tech
-    url: https://practicum.com
-    social:
-      linkedin: practicum-indonesia
-      twitter: PracticumUSA
-      instagram: practicum.indonesia
-      youtube: '@practicumindonesia8423'
-    logo: assets/images/Practicum.png
-    image: assets/images/practicum_banner.png
-    role: Data Scientist / Data Analyst Mentor
-    responsibility: Assist the students to understand the concepts of data analysis and data science. Conduct webinars on industrial applications, do professional coaching and development.
+    role: Cable Specialist, Export Cable Systems
+    scope: >-
+      Full lifecycle engineering for export cable systems — integrating
+      electrical, thermal, mechanical, and subsea data for design validation,
+      operational decisions, and end-of-life assessment.
+    projects:
+      - "Cable exposure detection & monitoring: integrating DTS/DAS with subsea survey data for early intervention"
+      - "TEEM (Thermal-Electrical Equivalent Model): verifying supplier thermal calculations and design assumptions"
+      - "RBCD (Risk-Based Cable Design): ongoing simulation for design validation"
+      - "Dynamic Line Rating (DLR) methodology — also the focus of my Master's thesis"
+    capabilities:
+      - HV cable systems (export, array, onshore, offshore)
+      - Thermal-electrical modeling (IEC 60287, CIGRE TB 880/908)
+      - Cable condition monitoring (DTS/DAS)
+      - Risk-based cable design (Monte Carlo methods)
+      - Remaining life assessment & end-of-life decisions
+    stack:
+      - Python (NumPy, Pandas, Matplotlib, Scikit-learn)
+      - MATLAB, Mathcad, CYMCAP
+      - pandapower, PyPSA
+      - IEC 60287 / CIGRE TB 880 & TB 908, DNV standards
 
 social:
-  twitter: jpawitro
   github:  jpawitro
   linkedin: jpawitro
-  instagram:  jpawitro
-  youtube:
   medium:
 
 # Build settings

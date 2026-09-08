@@ -23,8 +23,24 @@
                     </div>
                 
                     <div class="content">
-                        {{ job.responsibility }}
-                        <br><br>
+                        <p>{{ job.scope }}</p>
+                        {% if job.projects %}
+                        <p class="has-text-weight-semibold mb-1">Current projects</p>
+                        <ul>
+                            {% for item in job.projects %}<li>{{ item }}</li>{% endfor %}
+                        </ul>
+                        {% endif %}
+                        {% if job.capabilities %}
+                        <p class="has-text-weight-semibold mb-1">Capabilities</p>
+                        <ul>
+                            {% for item in job.capabilities %}<li>{{ item }}</li>{% endfor %}
+                        </ul>
+                        {% endif %}
+                        {% if job.stack %}
+                        <p class="has-text-weight-semibold mb-1">Stack</p>
+                        <p>{{ job.stack | join: ", " }}</p>
+                        {% endif %}
+                        <br>
                         <div class="has-text-info">
                             <span class="is-inline-block">Follow them on:&nbsp;&nbsp;</span>
                             <div class="container is-inline-block has-text-danger">
