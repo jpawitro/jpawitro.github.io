@@ -90,3 +90,14 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# AGENTS.md and rpi/ are repo-internal (AI-assistant instructions and dated
+# work plans/reports) — not site content. Without this, GitHub Pages'
+# bundled plugins (jekyll-optional-front-matter, jekyll-default-layout)
+# render every .md file as a real page, which both publishes these
+# internal docs live and lets literal Liquid-looking text inside them
+# (e.g. a plan describing old `{% include %}` lines) get executed as
+# actual Liquid tags.
+exclude:
+  - AGENTS.md
+  - rpi/
