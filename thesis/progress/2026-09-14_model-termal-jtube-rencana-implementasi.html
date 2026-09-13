@@ -4329,7 +4329,7 @@ CATATAN RENDER:
 <section id="a-langkah-1-data-era5" class="slide level2">
 <h2>1.2a Langkah 1 — Data ERA5</h2>
 <p>Enam variabel mentah: <code>u10, v10, u100, v100, t2m, ssrd</code>. Konversi satuan: <code>t2m − 273.15</code> (K → °C), <code>ssrd / 3600</code> (J/m² akumulasi jam → W/m² rata-rata).</p>
-<div id="32e0ea79" class="cell" data-execution_count="3">
+<div id="75a9974f" class="cell" data-execution_count="3">
 <div class="cell-output cell-output-display cell-output-markdown" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href aria-label="1"></a><span class="kw">def</span> validate_hourly_coverage(</span>
 <span id="cb1-2"><a href aria-label="2"></a>    df: pd.DataFrame, start: <span class="bu">str</span>, end: <span class="bu">str</span></span>
@@ -4426,7 +4426,7 @@ text-align: right;
 CF_{\text{tahun}} = \frac{\text{mean}(P_\text{farm})}{P_\text{rated}},
 \qquad P_\text{rated} = N_\text{turb} \times 15\ \text{MW}
 \]</span></p>
-<div id="3f68ee26" class="cell" data-execution_count="6">
+<div id="c9bae7c8" class="cell" data-execution_count="6">
 <div class="cell-output cell-output-display cell-output-markdown" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href aria-label="1"></a><span class="kw">def</span> rank_representative_years(annual_cf: pd.Series) <span class="op">-&gt;</span> pd.DataFrame:</span>
 <span id="cb2-2"><a href aria-label="2"></a>    <span class="co">&quot;&quot;&quot;Rank years by annual capacity factor; label high/median/low.</span></span>
@@ -4563,7 +4563,7 @@ P_\text{farm}(t) = N_\text{turb}\, P_\text{turb}(t)\, A_\text{avail} \tag{3.1}
 <p><span class="math display">\[
 I_\text{load}(t) = \frac{P_\text{farm}(t)}{N_\text{circuits}\sqrt{3}\,V_{LL}\cos\phi} \tag{3.2}
 \]</span></p>
-<div id="a84590e1" class="cell" data-execution_count="8">
+<div id="b9f6ddfe" class="cell" data-execution_count="8">
 <div class="cell-output cell-output-display cell-output-markdown" data-execution_count="8">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href aria-label="1"></a><span class="kw">def</span> extrapolate_hub_height(</span>
 <span id="cb3-2"><a href aria-label="2"></a>    v_ref: pd.Series, z_ref_m: <span class="bu">float</span>, z_hub_m: <span class="bu">float</span>, beta: <span class="bu">float</span></span>
@@ -4716,7 +4716,7 @@ text-align: right;
 </tr>
 </tbody>
 </table>
-<div id="9860739b" class="cell" data-execution_count="11">
+<div id="b324dabc" class="cell" data-execution_count="11">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href aria-label="1"></a>i_rated_a <span class="op">=</span> FARM_CAPACITY_MW <span class="op">*</span> <span class="fl">1e3</span> <span class="op">/</span> (math.sqrt(<span class="dv">3</span>) <span class="op">*</span> V_LL_KV <span class="op">*</span> COS_PHI <span class="op">*</span> N_CIRCUITS)</span></code></pre></div><button title="Salin ke Papan Klip" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div id="cell-n-circuits-result" class="cell" data-execution_count="12">
