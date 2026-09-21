@@ -20,7 +20,7 @@
 
 title: Jpawitro's Space
 name: Joko Pawitro
-occupation: 'Engineer | Geek | Analyst'
+occupation: 'HV Cable & Offshore Wind Asset Engineer'
 email: jpawitro@protonmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Joko Pawitro's personal page.
@@ -47,7 +47,8 @@ occupations:
       - "Cable exposure detection & monitoring: integrating DTS/DAS with subsea survey data for early intervention"
       - "TEEM (Thermal-Electrical Equivalent Model): verifying supplier thermal calculations and design assumptions"
       - "RBCD (Risk-Based Cable Design): ongoing simulation for design validation"
-      - "Dynamic Line Rating (DLR) methodology — also the focus of my Master's thesis"
+      - "Cable uprating and commissioning of cable monitoring systems (execution phase)"
+      - "Dynamic Line Rating (DLR) methodology for operational capacity optimisation"
     capabilities:
       - HV cable systems (export, array, onshore, offshore)
       - Thermal-electrical modeling (IEC 60287, CIGRE TB 880/908)

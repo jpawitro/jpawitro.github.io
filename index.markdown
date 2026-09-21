@@ -4,4 +4,4 @@
 
 layout: home
 ---
-I work on HV cable engineering and offshore wind digitalization — thermal-electrical modeling, condition monitoring, and Dynamic Line Rating — while researching DLR for HV cable systems as my Master's thesis.
+HV cable and offshore wind asset engineer. I bring power systems, mechanical, and energy expertise to cable design, condition monitoring, and risk-based asset management, across the development, execution, and operation of offshore wind farms.

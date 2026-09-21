@@ -16,10 +16,15 @@ analytics and data science, before moving into HV cable engineering. That
 mechanical-to-electrical, hardware-to-data arc still shapes how I work —
 physics-grounded, but analytics-first.
 
-I'm currently pursuing a Master's in Sustainable Electrical Engineering at
-Institut Teknologi Sepuluh Nopember (ITS), researching Dynamic Line Rating
-for HV cable systems. I post progress write-ups as the [thesis](/thesis/progress/)
-moves along.
+My work sits where cable physics meets asset management: thermal-electrical
+modelling (IEC 60287, CIGRE), DTS/DAS-based condition monitoring, Dynamic Line
+Rating, and risk-based lifecycle decisions. I work across the development,
+execution, and operation phases of offshore wind farms — from cable design and
+risk-based sizing, through cable uprating and commissioning of cable
+monitoring systems, to long-term operation and remaining-life assessment.
+Earlier years in mechanical integrity, RCM, and ISO 55001 asset management
+systems are why I treat every cable as an asset with a lifecycle, not just a
+design case.
 
 Get in touch on [LinkedIn](https://linkedin.com/in/jpawitro), or find my code
 on [GitHub](https://github.com/jpawitro).
